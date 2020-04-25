@@ -3,8 +3,6 @@
 
 # In[1]:
 
-
-#!/Users/molikka/opt/anaconda3/lib/python3.7
 import clipboard
 from urllib.request import urlopen as uReq
 from bs4 import BeautifulSoup as soup
@@ -264,7 +262,7 @@ epub
 
 for links in epub:
     print(links)
-    wget.download(links, '/Users/molikka/Desktop/Learning/Books downloaded/{}.epub'.format(bookname2))
+    wget.download(links, '{}.epub'.format(bookname2))
     print("one epub downloaded!")
 
 
@@ -287,7 +285,7 @@ pdf
 
 for links in pdf:
     print(links)
-    wget.download(links, '/Users/molikka/Desktop/Learning/Books downloaded/{}.pdf'.format(bookname2))
+    wget.download(links, '{}.pdf'.format(bookname2))
     print("one pdf downloaded!")
 
 
